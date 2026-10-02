@@ -1,0 +1,23 @@
+[project]
+name = "flexisaf-ai-engineering-w1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MiaCodess", email = "ifeoluwaakapo3@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+flexisaf-ai-engineering-w1 = "flexisaf_ai_engineering_w1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+    "pytest>=9.1.1",
+]
