@@ -51,8 +51,8 @@ def pwd_checker_strength(password: str) -> str:
 
 def get_missing_rules(password: str) -> list[str]:
     missing = []
-    if len(password) < MIN_LENGTH:
-        missing.append(f"at least {MIN_LENGTH} characters")
+    if len(password) < MIN_LEN:
+        missing.append(f"at least {MIN_LEN} characters")
     if not any(char.isupper() for char in password):
         missing.append("an uppercase letter")
     if not any(char.islower() for char in password):
@@ -68,11 +68,12 @@ def main() -> None:
     password = input("Enter a password to check: ")
     print(f"Strength: {pwd_checker_strength(password)}")
 
+    missing = get_missing_rules(password)
+    if missing:
+        print("Missing: " + ", ".join(missing))
+    else:
+        print("All rules met!")
+
 
 if __name__ == "__main__":
     main()
-missing = get_missing_rules(password)
-if missing:
-    print("Missing: " + ", ".join(missing))
-else:
-    print("All rules met!")
