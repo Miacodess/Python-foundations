@@ -1,0 +1,13 @@
+{
+  "valid_readings": 55,
+  "skipped_rows": 5,
+  "lowest": 22.1,
+  "highest": 33.5,
+  "average": 27.29,
+  "above_threshold": 13,
+  "average_by_sensor": {
+    "S1": 28.53,
+    "S2": 26.34,
+    "S3": 27.1
+  }
+}

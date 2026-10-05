@@ -1,0 +1,5 @@
+Valid readings: 55
+Skipped rows:   5
+Lowest:  22.1
+Highest: 33.5
+Average: 27.29
